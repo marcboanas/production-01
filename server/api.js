@@ -1,6 +1,6 @@
 const jwt = require('express-jwt');
 const jwks = require('jwks-rsa');
-const Location = require('./models/Location');
+//const Location = require('./models/Location');
 
 // Authentication Middleware ----------------
 module.exports = function(app, config) {
