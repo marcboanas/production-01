@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router, NavigationStart } from '@angular/router';
 import 'rxjs/add/operator/filter';
+import { AuthService } from './../auth/auth.service';
 
 @Component({
     selector: 'app-header',
@@ -13,7 +14,8 @@ export class HeaderComponent implements OnInit {
     navOpen = false;
 
     constructor(
-      private router: Router
+      private router: Router,
+      public auth: AuthService
     ) { }
 
     ngOnInit() {
